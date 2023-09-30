@@ -1,2 +1,2 @@
 # JAVA Alpha
- I Will Upload Here Whatever I Have Leant
+ I Will Upload Here Whatever I Have Learnt
