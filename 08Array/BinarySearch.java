@@ -1,0 +1,30 @@
+
+
+public class BinarySearch {
+
+    public static int BinarySearch(int numbers[], int key){
+        int start = 0;
+        int end = numbers.length-1;
+        
+        while(start<=end){
+            int mid = (start+end)/2;
+            if(numbers[mid]==key){
+                return mid;
+            }
+            if(numbers[mid]>key){
+                end = mid-1; // left
+            }
+            else{
+                start = mid+1; // right
+            }
+            
+        }
+        return -1;
+    }
+
+    public static void main(String args[]){
+        int numbers[] = { 2, 4, 15, 18, 20, 24, 26, 28, 31 };
+        int key = 28;
+       System.out.println("Index for key: " + key + " is: " + BinarySearch(numbers, key));
+    }
+}
